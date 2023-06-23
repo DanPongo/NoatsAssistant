@@ -1,0 +1,175 @@
+.headline {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #333333;
+    
+}
+
+body {
+    background-image: url("assets/img5.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.form-control {
+    direction: rtl;
+
+
+}
+
+.container form {
+    width: 30%;
+    max-width: 400px;
+    border: 0.1px solid #1412121a;
+    border-radius: 10px;
+    padding: 10px;
+    height: 50%;
+    margin-top: -1.2%;
+    text-align: right;
+    background-image: url("assets/backgronodlines.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container #sectionTasks {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 2.8%;
+}
+
+.task {
+    flex-direction: column;
+    display: block;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    width: 17.65%;
+    font-size: 14px;
+    height: 150px;
+    }
+
+.task.normal {
+    background-color: transparent;
+}
+
+.task.important {
+    background-color: lightyellow;
+}
+
+.task.urgent {
+    background-color:rgb(253, 205, 205);
+}
+.task.normal {
+    background-color:white;
+}
+
+.description-container {
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+    word-wrap: break-word;
+    padding: 5px;
+    box-sizing: border-box; 
+    
+}
+
+.description {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    position: relative;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    direction: rtl;
+}
+
+.task .remove {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.task:hover .remove {
+    opacity: 1;
+}
+
+.time {
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+}
+
+.priorityBox{
+    text-align: right;
+    border-radius: 8px;
+    border-color: transparent;
+}
+#priorityBox option[value="important"] {
+    background-color: lightyellow;
+}
+
+#priorityBox option[value="urgent"] {
+    background-color: rgb(253, 205, 205);
+}
+
+#priorityBox option[value="normal"] {
+    background-color:white;
+}
+
+.btn.btn-secondary{
+    text-align: center;
+}
+
+.form-select {
+    text-align: right;
+}
+
+.allnotes {
+    text-align: center;
+    margin-top: -1%;
+    margin-bottom: -2%;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.form-label {
+    transform: translateY(-6px); 
+    font-weight: 600;
+}
+
+.form-label-when {
+    transform: translateY(-6px);
+    font-weight: 600; 
+}
+
+
+.task:last-child {
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
