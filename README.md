@@ -1,4 +1,5 @@
 # Noats App
+![noats](https://github.com/DanPongo/NoatsAssistant/assets/106473315/cbfedd7d-e9b0-4c51-8865-d95cffd90346)
 
 Organize your life and never miss a deadline with Noats, the coolest and simplest note-taking app around! Jot down your tasks, set a time, and prioritize to your needs. No frills, just pure productivity.
 
